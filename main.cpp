@@ -10,19 +10,17 @@
 
 int main()
 {
-	std::cout << std::boolalpha;
-	std::cout <<"RES = " << fuzzy_search("car", "cartwheel") << std::endl;
-	std::cout <<"RES = " << fuzzy_search("cwhl", "cartwheel") << std::endl;
-	std::cout <<"RES = " << fuzzy_search("cwheel", "cartwheel") << std::endl;
-	std::cout <<"RES = " << fuzzy_search("cartwheel", "cartwheel") << std::endl;
-
-	std::cout <<"RES = " << fuzzy_search("cwheeel", "cartwheel") << std::endl;
-	std::cout <<"RES = " << fuzzy_search("lw", "cartwheel") << std::endl;
-
-	std::cout <<"RES = " << fuzzy_search("w", "cartwheel") << std::endl;
-	std::cout <<"RES = " << fuzzy_search("l", "cartwheel") << std::endl;
-	std::cout <<"RES = " << fuzzy_search("cl", "cartwheel") << std::endl;
-	
+    std::cout << std::boolalpha;
+    std::cout <<"RES = " << fuzzy_search("car", "cartwheel") << std::endl;
+    std::cout <<"RES = " << fuzzy_search("cwhl", "cartwheel") << std::endl;
+    std::cout <<"RES = " << fuzzy_search("cwheel", "cartwheel") << std::endl;
+    std::cout <<"RES = " << fuzzy_search("cartwheel", "cartwheel") << std::endl;
+    std::cout <<"RES = " << fuzzy_search("cwheeel", "cartwheel") << std::endl;
+    std::cout <<"RES = " << fuzzy_search("lw", "cartwheel") << std::endl;
+    std::cout <<"RES = " << fuzzy_search("w", "cartwheel") << std::endl;
+    std::cout <<"RES = " << fuzzy_search("l", "cartwheel") << std::endl;
+    std::cout <<"RES = " << fuzzy_search("cl", "cartwheel") << std::endl;
+    
     unsigned length = 0;
     std::cout << "Kol elem = " << (length = E(544, 119)) << std::endl;
 
