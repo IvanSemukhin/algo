@@ -5,8 +5,7 @@
 #include <vector>
 #include <string>
 #include "tfunc.h"
-
-// compile string: g++ main.cpp -std=c++11
+#include "func.h"
 
 int main()
 {
@@ -23,6 +22,7 @@ int main()
     
     unsigned length = 0;
     std::cout << "Kol elem = " << (length = E(544, 119)) << std::endl;
+    std::cout << "factorial(" << length << ")= " << factorial(length) << std::endl;
 
     std::vector<int> data;
     init_vec(data, length);

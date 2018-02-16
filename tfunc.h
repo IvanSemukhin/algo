@@ -113,17 +113,6 @@ template <class X> long lin_search(std::vector<X>& vec, X elem){
         return index;
     return -1;
 }
-
-bool fuzzy_search(const std::string& chunk, const std::string& text){
-	if(chunk.length() > text.length())
-		return false;
-	if(chunk.length() == text.length())
-		return chunk == text;
-	for(long i=0, index=0;i<chunk.length();i++, index++)
-		if(std::string::npos == (index = text.find(chunk.at(i), index)))
-			return false;
-	return true;
-}
 //-----------------------------------------------------------------------------
 
 template <class IntType> IntType E(IntType a, IntType b){
