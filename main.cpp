@@ -4,7 +4,7 @@
 #include <random>
 #include <vector>
 #include <string>
-#include "myfunction.h"
+#include "tfunc.h"
 
 // compile string: g++ main.cpp -std=c++11
 
