@@ -1,5 +1,5 @@
-#ifndef MYFUNCTION_H
-#define MYFUNCTION_H
+#ifndef TFUNC_H
+#define TFUNC_H
 
 const double PI = 3.1415926535;
 
@@ -130,4 +130,4 @@ template <class IntType> IntType E(IntType a, IntType b){
     return b ? E(b, a%b) : a;
 }
 
-#endif // MYFUNCTION_H
+#endif // TFUNC_H
