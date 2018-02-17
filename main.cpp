@@ -34,6 +34,7 @@ int main()
     std::cout << "fuzzy_search(\"cl\", \"cartwheel\") is ";
     std::cout << fuzzy_search("cl", "cartwheel") << std::endl;
 	std::cout << "-----------------------------------------------------\n";
+
     unsigned length = 0;
     std::cout << "E(923, 598) = "
 			  << (length = E(923, 598)) << std::endl;
@@ -41,6 +42,7 @@ int main()
     std::cout << "factorial(" << length << ") = "
 			  << factorial(length) << std::endl;
 	std::cout << "-----------------------------------------------------\n";
+
     std::vector<int> data;
     init_vec(data, length);
     std::cout << "source array: ";
@@ -66,13 +68,28 @@ int main()
     std::cout << "select_sort: ";
     print_vec(data);
 	std::cout << "-----------------------------------------------------\n";
+
     int elem = 0;
+    std::cout << "enter the elem for search in array: ";
     while(std::cin >> elem){
-        long index = bin_search(data, elem);
-        if(index < 0)
+        long bin_index = bin_search(data, elem);
+        long lin_index = lin_search(data, elem);
+        
+        std::cout << "bin search result: ";
+        if(bin_index < 0)
             std::cout << "NOT FOUND!\n";
         else
-            std::cout << "index = " << index << std::endl;
-    }
+            std::cout << "index = " << bin_index << std::endl;
+
+        std::cout << "lin search result: ";
+        if(lin_index < 0)
+            std::cout << "NOT FOUND!\n";
+        else
+            std::cout << "index = " << lin_index << std::endl;
+
+	std::cout << "enter 'Ctrl+D' to exit or\n";
+	std::cout << "enter the elem for search in array: ";
+	}
+    std::cout << std::endl;
     return 0;
 }
