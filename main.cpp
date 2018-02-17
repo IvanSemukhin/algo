@@ -36,12 +36,10 @@ int main()
 	std::cout << "-----------------------------------------------------\n";
 
     unsigned length = 0;
-    std::cout << "E(923, 598) = "
-			  << (length = E(923, 598)) << std::endl;
+    std::cout << "E(923, 598) = " << (length = E(923, 598)) << std::endl;
 			  
-    std::cout << "factorial(" << length << ") = "
-			  << factorial(length) << std::endl;
-	std::cout << "-----------------------------------------------------\n";
+    std::cout << "factorial(" << length << ") = " << factorial(length) << std::endl;
+    std::cout << "-----------------------------------------------------\n";
 
     std::vector<int> data;
     init_vec(data, length);
